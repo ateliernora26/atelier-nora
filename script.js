@@ -8,7 +8,7 @@
 document.addEventListener("DOMContentLoaded", function () {
 
   const socialLinks = {
-    whatsapp: "https://wa.me/229014875734",
+    whatsapp: "https://wa.me/22948757347",
     tiktok: "https://www.tiktok.com/@atelier.nora0?_r=1&_t=ZS-9B4RtNknaFg",
     facebook: "",
     instagram: ""
