@@ -5,7 +5,7 @@
 */
 
 const socialLinks = {
-  whatsapp: "",   // Exemple : https://wa.me/229XXXXXXXX
+  whatsapp: "https://wa.me/229014875734",   // Exemple : https://wa.me/229XXXXXXXX
   tiktok: "https://www.tiktok.com/@atelier.nora0?_r=1&_t=ZS-9B4RtNknaFg",
   facebook: "",   // Exemple : https://www.facebook.com/ta-page
   instagram: ""   // Exemple : https://www.instagram.com/ton-compte/
