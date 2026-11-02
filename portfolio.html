@@ -1,0 +1,117 @@
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="ATELIER NORA — Créations artisanales, objets personnalisés, décoration et design.">
+  <title>ATELIER NORA | Portfolio</title>
+  <link rel="stylesheet" href="portfolio.css">
+</head>
+
+<body>
+
+  <header class="header">
+    <a href="portfolio.html" class="brand">AN</a>
+
+    <nav class="navigation">
+      <a href="#accueil" data-i18n="navHome">Accueil</a>
+      <a href="#apropos" data-i18n="navAbout">À propos</a>
+      <a href="#creations" data-i18n="navCreations">Créations</a>
+      <a href="#contact" data-i18n="navContact">Contact</a>
+    </nav>
+
+    <select id="languageSelect" aria-label="Choose language">
+      <option value="fr" selected>FR</option>
+      <option value="en">EN</option>
+    </select>
+  </header>
+
+  <main>
+    <section class="hero" id="accueil">
+      <p class="eyebrow" data-i18n="eyebrow">BIENVENUE CHEZ ATELIER NORA</p>
+
+      <h1 data-i18n="heroTitle">L'art qui prend vie.</h1>
+
+      <p class="hero-description" data-i18n="heroText">
+        Des créations artisanales, des objets personnalisés et un univers
+        décoratif imaginé avec soin.
+      </p>
+
+      <a href="#creations" class="main-button" data-i18n="heroButton">
+        Découvrir nos créations
+      </a>
+    </section>
+
+    <section class="about section" id="apropos">
+      <p class="eyebrow" data-i18n="aboutEyebrow">NOTRE UNIVERS</p>
+      <h2 data-i18n="aboutTitle">À propos d'ATELIER NORA</h2>
+      <p data-i18n="aboutText">
+        ATELIER NORA est un univers dédié à la créativité, à l'artisanat
+        et à la personnalisation. Chaque idée est une occasion de créer
+        quelque chose d'unique.
+      </p>
+    </section>
+
+    <section class="creations section" id="creations">
+      <p class="eyebrow" data-i18n="workEyebrow">NOTRE SAVOIR-FAIRE</p>
+      <h2 data-i18n="workTitle">Nos univers créatifs</h2>
+
+      <div class="gallery">
+        <article class="gallery-card">
+          <div class="image-placeholder">AN</div>
+          <h3 data-i18n="category1">Créations artisanales</h3>
+          <p data-i18n="description1">
+            Des créations imaginées et réalisées avec soin.
+          </p>
+        </article>
+
+        <article class="gallery-card">
+          <div class="image-placeholder">AN</div>
+          <h3 data-i18n="category2">Objets personnalisés</h3>
+          <p data-i18n="description2">
+            Des objets uniques qui reflètent votre personnalité.
+          </p>
+        </article>
+
+        <article class="gallery-card">
+          <div class="image-placeholder">AN</div>
+          <h3 data-i18n="category3">Décoration & design</h3>
+          <p data-i18n="description3">
+            Des idées créatives pour embellir vos espaces.
+          </p>
+        </article>
+      </div>
+    </section>
+
+    <section class="contact section" id="contact">
+      <p class="eyebrow" data-i18n="contactEyebrow">RESTONS EN CONTACT</p>
+      <h2 data-i18n="contactTitle">Une idée à concrétiser ?</h2>
+      <p data-i18n="contactText">
+        Contactez-nous pour échanger autour de votre projet.
+      </p>
+
+      <a href="https://wa.me/229014875734"
+         target="_blank"
+         rel="noopener noreferrer"
+         class="main-button"
+         data-i18n="contactButton">
+        Nous contacter
+      </a>
+
+      <p>
+        <a href="mailto:ateliernora26@gmail.com">
+          ateliernora26@gmail.com
+        </a>
+      </p>
+    </section>
+  </main>
+
+  <footer>
+    <p>ATELIER NORA © 2026</p>
+    <p data-i18n="footerText">L'art qui prend vie.</p>
+  </footer>
+
+  <script src="portfolio.js"></script>
+</body>
+</html>
