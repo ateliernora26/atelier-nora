@@ -87,3 +87,5 @@ changeLanguage(savedLanguage);
 languageSelect.addEventListener("change", function () {
   changeLanguage(this.value);
 });
+
+document.getElementById("currentYear").textContent = new Date().getFullYear();
