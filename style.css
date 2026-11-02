@@ -1,0 +1,132 @@
+* { box-sizing: border-box; }
+
+:root {
+  --cream: #F3E9DC;
+  --cream-light: #FBF6EF;
+  --pink: #C99A91;
+  --gold: #B58A43;
+  --gold-light: #D7B878;
+  --sage: #59634D;
+  --ink: #211D19;
+  --muted: #746B60;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  padding: 28px 16px;
+  display: grid;
+  place-items: center;
+  color: var(--ink);
+  background: #E8D9C7;
+  font-family: "Montserrat", Arial, sans-serif;
+}
+
+.page {
+  position: relative;
+  isolation: isolate;
+  width: min(100%, 490px);
+  min-height: 780px;
+  overflow: hidden;
+  border: 1px solid rgba(181,138,67,.35);
+  border-radius: 5px;
+  background:
+    radial-gradient(ellipse at 50% 35%, rgba(255,255,255,.55), transparent 55%),
+    var(--cream);
+  box-shadow: 0 22px 65px rgba(47,35,22,.22);
+}
+
+.content {
+  position: relative;
+  z-index: 2;
+  width: min(100% - 42px, 390px);
+  margin: 0 auto;
+  padding: 42px 0 28px;
+  text-align: center;
+}
+
+.paint { position: absolute; z-index: 1; pointer-events: none; filter: saturate(.85); }
+.paint-pink {
+  width: 240px; height: 180px; top: -55px; left: -95px;
+  transform: rotate(-28deg);
+  background: linear-gradient(135deg, transparent 10%, rgba(201,154,145,.62) 42%, rgba(201,154,145,.12) 70%, transparent 78%);
+  border-radius: 48% 52% 36% 64%;
+}
+.paint-gold {
+  width: 230px; height: 190px; top: -95px; right: -100px;
+  transform: rotate(35deg);
+  background: linear-gradient(135deg, transparent, rgba(181,138,67,.55), rgba(215,184,120,.18), transparent 75%);
+  border-radius: 50%;
+}
+.paint-green {
+  width: 210px; height: 170px; bottom: -95px; right: -100px;
+  transform: rotate(-25deg);
+  background: linear-gradient(135deg, transparent, rgba(89,99,77,.85), rgba(89,99,77,.25) 75%, transparent);
+  border-radius: 50%;
+}
+
+.monogram {
+  position: relative;
+  width: 125px;
+  height: 112px;
+  margin: 0 auto 3px;
+  font-family: "Cormorant Garamond", Georgia, serif;
+  color: #171512;
+}
+.monogram span { position: absolute; font-size: 112px; line-height: 1; font-weight: 400; }
+.letter-a { left: 15px; top: -5px; }
+.letter-n { left: 52px; top: 12px; }
+
+.brand-name {
+  margin: 0;
+  font-size: 18px;
+  letter-spacing: .36em;
+  font-weight: 500;
+}
+.gold-divider {
+  display: flex; align-items: center; justify-content: center;
+  gap: 10px; margin: 15px auto 8px;
+}
+.gold-divider::before, .gold-divider::after {
+  content: ""; width: 58px; height: 1px; background: var(--gold);
+}
+.gold-divider span { width: 8px; height: 8px; border-radius: 50%; background: var(--gold); }
+.tagline { margin: 0; font-size: 12px; letter-spacing: .35em; }
+
+.intro { margin: 42px 0 24px; }
+.intro h1 {
+  margin: 0 0 8px;
+  font: 500 30px/1.1 "Cormorant Garamond", Georgia, serif;
+}
+.intro p { max-width: 320px; margin: auto; color: var(--muted); font-size: 12px; line-height: 1.7; }
+
+.social-links { display: grid; gap: 12px; text-align: left; }
+.social-link {
+  display: flex; align-items: center; gap: 14px;
+  min-height: 76px; padding: 12px 15px;
+  color: var(--ink); text-decoration: none;
+  border: 1px solid rgba(181,138,67,.43);
+  border-radius: 5px;
+  background: rgba(255,252,247,.78);
+  box-shadow: 0 4px 13px rgba(70,53,32,.045);
+  transition: transform .2s ease, background .2s ease, box-shadow .2s ease;
+}
+.social-link:hover { transform: translateY(-2px); background: #fffaf3; box-shadow: 0 8px 20px rgba(70,53,32,.1); }
+.social-icon {
+  display: grid; place-items: center; flex: 0 0 42px; height: 42px;
+  color: var(--gold); border: 1px solid rgba(181,138,67,.45); border-radius: 50%;
+}
+.social-icon svg { width: 22px; height: 22px; fill: none; stroke: currentColor; stroke-width: 1.7; stroke-linecap: round; stroke-linejoin: round; }
+.social-link > span:nth-child(2) { display: grid; gap: 4px; flex: 1; }
+.social-link strong { font-size: 13px; font-weight: 600; }
+.social-link small { color: var(--muted); font-size: 10px; }
+.arrow { color: var(--gold); font-size: 20px; }
+.footer { margin: 34px 0 0; font-size: 9px; letter-spacing: .24em; color: #655A4B; }
+.footer span { color: var(--gold); padding: 0 5px; }
+
+@media (max-width: 380px) {
+  .content { width: calc(100% - 30px); padding-top: 32px; }
+  .intro { margin-top: 32px; }
+  .intro h1 { font-size: 27px; }
+  .social-link { min-height: 70px; padding: 10px; }
+}
